@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>速習Vue.js</title>
+</head>
+<body>
+<!--ページ本体-->
+<div id="app">
+  <form>
+    <label for="message">メッセージ</label><br>
+    <textarea name="message" id="message" cols="30" rows="10" v-on:keyup.alt.enter="help" v-model="message"></textarea>
+  </form>
+</div>
+<script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
+<script src="./lib/event_sys.js"></script>
+</body>
+</html>
