@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>速習Vue.js</title>
+</head>
+<body>
+<!--ページ本体-->
+<div id="app">
+  <form>
+    <label for="kb">1KB</label>
+    <input type="radio" name="unit" id="kb" v-model="unit" v-bind:value="{ name:'メガバイト', size: 1048576 }">
+    <label for="gb">1GB</label>
+    <input type="radio" name="unit" id="gb" v-model="unit" v-bind:value="{ name:'ギガバイト', size: 1073742000 }">
+  </form>
+  <div>選択値：{{ unit.name }}／{{ unit.size }}</div>
+</div>
+<script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
+<script src="./lib/model_obj.js"></script>
+</body>
+</html>
