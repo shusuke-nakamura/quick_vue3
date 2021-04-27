@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>速習Vue.js</title>
+</head>
+<body>
+<!--ページ本体-->
+<div id="app">
+  <form>
+    <label for="time">50m走タイム：</label>
+    <input type="text" name="time" id="time" v-model.number="time" v-on:change="onchange" />
+  </form>
+</div>
+<script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
+<script src="./lib/model_number.js"></script>
+</body>
+</html>
