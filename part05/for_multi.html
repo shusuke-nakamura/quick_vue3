@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>速習Vue.js</title>
+</head>
+<body>
+<!--ページ本体-->
+<div id="app">
+  <template v-for="a in articles">
+    <header>{{ a.title }}</header>
+    <div>{{ a.description }}</div>
+    <footer>{{ a.author }}著</footer>
+  </template>
+</div>
+<script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
+<script src="./lib/for_multi.js"></script>
+</body>
+</html>
