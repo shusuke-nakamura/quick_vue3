@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>速習Vue.js</title>
+</head>
+<body>
+<!--ページ本体-->
+<div id="app">
+  <ul>
+    <li v-for="(value, key, i) in member">
+      {{ key }} : {{ value }}
+    </li>
+  </ul>
+</div>
+<script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
+<script src="./lib/for_obj.js"></script>
+</body>
+</html>
