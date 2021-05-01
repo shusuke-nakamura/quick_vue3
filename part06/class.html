@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>速習Vue.js</title>
+  <link rel="stylesheet" href="./css/class.css">
+</head>
+<body>
+<!--ページ本体-->
+<div id="app">
+  <div class="big" v-bind:class="{ color:true, frame: isChange }">
+    {{ message }}
+  </div>
+</div>
+<script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
+<script src="./lib/class.js"></script>
+</body>
+</html>
