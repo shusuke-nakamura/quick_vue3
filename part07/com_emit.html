@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>速習Vue.js</title>
+</head>
+<body>
+<!--ページ本体-->
+<div id="app">
+  <div>現在のカウント：{{ count }}</div>
+  <div>
+    <my-counter step="1" v-on:increment="onincrement"></my-counter>
+    <my-counter step="5" v-on:increment="onincrement"></my-counter>
+    <my-counter step="10" v-on:increment="onincrement"></my-counter>
+    <my-counter step="-1" v-on:increment="onincrement"></my-counter>
+  </div>
+</div>
+<script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
+<script src="./lib/com_emit.js"></script>
+</body>
+</html>
