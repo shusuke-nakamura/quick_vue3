@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>速習Vue.js</title>
+</head>
+<body>
+<!--ページ本体-->
+<div id="app">
+  <my-hello>
+    <template v-slot:header>
+      <h3>ようこそ速習Vue.jsへ</h3>
+    </template>
+    <p>一緒に勉強しましよう。</p>
+    <template v-slot:footer>
+      <a href="#">Q&A掲示板</a>
+    </template>
+    <p>質問は掲示板へどうぞ。</p>
+  </my-hello>
+</div>
+<script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
+<script src="./lib/com_slot_multi.js"></script>
+</body>
+</html>
